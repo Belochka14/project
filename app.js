@@ -53,21 +53,32 @@ console.log([1, 2, 3, 4]);
  * 3. Нам не нужно определять тип данных при создании переменных
  * 4. Если мы хотим использовать статическую типизацию мы можем использовать TypeScript или Flow
  */
-let arr = ["plum.png", "orange.png", "apple.bmp"];
+let num = 50;
 
-console.log(arr[0]);
+if (num < 49) {
+  console.log('Неверно!');
+} else if (num > 100) {
+  console.log('Много!');
+} else {
+  console.log('Верно!');
+}
 
-// alert("Hello World!");
+(num == 50) ? console.log('Верно!'): console.log('Неверно!');
 
-// let answer = confirm("Are you here?");
-
-// let answer = +prompt("Есть ли вам 18?", "Да");
-
-// console.log(typeof answer);
-
-// console.log(1, 2, 3);
-let incr = 10,
-  decr = 10;
-
-console.log(incr++);
-console.log(decr--);
+switch (num) {
+  case num < 49:
+    console.log('Неверно!');
+    break;
+  case num > 100:
+    console.log('Много!');
+    break;
+  case num > 80:
+    console.log('Всё ещё много!');
+    break;
+  case 50:
+    console.log('Верно!');
+    break;
+  default:
+    console.log('Что-то пошло не так!');
+    break;
+}
